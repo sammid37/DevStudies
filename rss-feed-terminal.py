@@ -1,7 +1,4 @@
-# Samantha Dantas Medeiros (28/10/2021)
-# Todo:
-##[] Informar mais um link de feed RSS e exibir seu título e link
-
+# Samantha Dantas Medeiros Oct 28th, 2021
 import feedparser
 
 # O usuário irá informar a URL de um feed RSS
@@ -23,6 +20,7 @@ def display(entry):
     print("\"{}\"".format(entry['title']))
     print("→ {}".format(entry['link']))
     print()
+
 # MAIN: enquanto a URL for diferente de vazio, irá ler múltiplos feeds RSS
 def main():
     url = get_url()
@@ -34,5 +32,3 @@ def main():
 # execução
 if __name__ == '__main__':
 	main()
-
-print("\u001b[32m Sucesso!")
