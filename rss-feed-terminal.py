@@ -10,8 +10,9 @@ def get_url():
 # Lendo a URL informada
 def read(url):
     newsFeed = feedparser.parse(url)
-    entry = newsFeed.entries[0]
-    display(entry)
+    for i in range(5):
+        entry = newsFeed.entries[i]
+        display(entry)
     
 
 def display(entry):
